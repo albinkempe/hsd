@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,22 +18,35 @@
             background-color: #1E1714;
             color: #B3A398;
         }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 100vh;
+        }
+
         div {
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 0.5em;
         }
+
         h1 {
             font-size: 2.6em;
         }
+
         a {
             color: #d7bdf0;
             font-weight: bold;
         }
+
         a:hover {
             text-decoration: underline;
         }
+
         .player {
             background-color: #B3A398;
             padding: 0.4em 1em;
@@ -41,25 +55,44 @@
             color: #1E1714;
             font-weight: bold;
         }
+
+        .home {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ff9f50;
+            color: #1E1714;
+            height: 3em;
+            width: 3em;
+            border-radius: 100%;
+            text-decoration: none;
+            text-align: center;
+            line-height: 3em;
+        }
     </style>
 </head>
-<body>
-    <div>
-        <h1>HSD Esports</h1>
-        <h2>Team Members</h2>
-        <div class="player">
-            <p>mike</p>
-        </div>
-        <div class="player">
-            <p>Trumman</p>
-        </div>
-        <div class="player">
-            <p>turbo</p>
-        </div>
-    </div>
 
-    <div>
-        <a href="https://albinkempe.github.io/the-finals/">View Ranks</a>
-    </div>
+<body>
+    <main>
+        <div>
+            <h1>HSD Esports</h1>
+            <h2>Team Members</h2>
+            <div class="player">
+                <p>mike</p>
+            </div>
+            <div class="player">
+                <p>Trumman</p>
+            </div>
+            <div class="player">
+                <p>turbo</p>
+            </div>
+        </div>
+
+        <div>
+            <a href="https://albinkempe.github.io/the-finals/">View Ranks</a>
+        </div>
+    </main>
+    <a class="home" href="https://albinkempe.github.io">Home</a>
 </body>
+
 </html>
